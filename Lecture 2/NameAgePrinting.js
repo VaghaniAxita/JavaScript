@@ -4,7 +4,7 @@ Create a variable age to store your age
 Print the values stored in the variable on one line followed by the type of the variable in the next line
 */
 
-let name="name:Nisha"
+let name="name:Axita"
 let age=18
 
 console.log(name,age);
