@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Variable Assignment</title>
+<!-- <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  #output {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head> -->
+<body>
+  <h3>Printing Variable : </h3>
+  <p>Initial value of the number:</p>
+  <p id="initialValue"></p>
+  <p>Updated value of the number:</p>
+  <p id="updatedValue"></p>
+
+  <script>
+
+    let number = 10;
+    document.getElementById("initialValue").innerHTML = "Number :" + number;
+    number = 20;
+    document.getElementById("updatedValue").innerHTML = "Number :" + number;
+  </script>
+</body>
+</html>

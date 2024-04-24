@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtract Function</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #Form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div id="Form">
+        <h3>Find Subtraction</h3>
+        <label for="num1">Enter number 1:</label>
+        <input type="number" id="num1" name="num1">
+        <br>
+        <label for="num2">Enter number 2:</label>
+        <input type="number" id="num2" name="num2">
+        <br>
+        <label for="num3">Enter number 3:</label>
+        <input type="number" id="num3" name="num3">
+        <br>
+        <label for="num4">Enter number 4:</label>
+        <input type="number" id="num4" name="num4">
+        <br>
+        <button onclick=" subtract()">Subtract</button>
+        <p id="output">Answer</p>
+    </div>
+
+    <script>
+        const subtract = () => {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            let num3 = document.getElementById("num3").value
+            let num4 = document.getElementById("num4").value
+
+            let result = num1-num2-num3-num4;
+            document.getElementById("output").innerHTML = "The subtract is: " + result;
+        }
+    </script>
+</body>
+
+</html>
