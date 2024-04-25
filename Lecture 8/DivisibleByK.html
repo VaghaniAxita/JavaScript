@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibly by K</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #Form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div id="Form">
+        <h3>Divisibly by K</h3>
+        <label for="num">Enter Num:</label>
+        <input type="number" id="num" name="k">
+        <br>
+        <label for="k">Enter K:</label>
+        <input type="number" id="K" name="K">
+        <br>
+        <button onclick="print()">Click</button>
+        <!-- <p id="output">Answer</p> -->
+    </div>
+
+    <script>
+        const print = () => {
+            let num = document.getElementById("num").value
+            let k = document.getElementById("K").value
+            let output = " "
+            for (let i = 1; i <= num; i++) {
+                if (i % k == 0) {
+                    output += i + " ";
+                }
+            }
+           // document.getElementById("output").innerHTML = output
+           console.log(output);
+        }
+    </script>
+</body>
+
+</html>
