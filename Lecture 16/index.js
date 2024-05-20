@@ -1,17 +1,13 @@
-//array
 let students = []
 
-//function for data show in webpage(UI)
 const Uimaker = () => {
-    document.getElementById("studentList").innerHTML = " "
+    document.getElementById("studentList").innerHTML = ""
+
     for (let i = 0; i < students.length; i++) {
-        //tag create
         let name = document.createElement("h1")
         name.innerHTML = students[i].name
     }
 }
-
-//function for data store
 const handleStudentData = (e) => {
     e.preventDefault();
 
@@ -22,18 +18,11 @@ const handleStudentData = (e) => {
     let data = {
         name: name,
         course: course,
-        grid: grid
-    }
-
-    // let data={
-    //     name:document.getElementById('name').value
-    //      course:document.getElement('course').value
-    //      grid:document.getElement('grid').value
-    // }
+        grid: grid,
+    };
 
     students.push(data);
-    Uimaker()
-
+    Uimaker();
 }
 
 document.getElementById("studentData").addEventListener("submit", handleStudentData)
