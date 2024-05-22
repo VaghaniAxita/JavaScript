@@ -8,6 +8,24 @@ body {
     align-items: center;
 }
 
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 .counter-container {
     display: flex;
     justify-content: center;
@@ -47,14 +65,6 @@ body {
     font-size: 16px;
     color: #333;
     margin-top: 5px;
-}
-
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin: 20px 0 10px;
-    text-align: center;
 }
 
 .timer {
