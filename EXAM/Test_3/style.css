@@ -1,0 +1,36 @@
+button{
+    display: flex;
+    margin: 10px;
+    height: 25px;
+    width: auto;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+h5{
+    margin-top: 50px;
+    font-size: 20px;
+} 
+
+h2{
+    text-align: center;
+}
+
+span{
+    font-size: 16px;
+    font-weight: bold
+}
+
+#sub{
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+    border-radius: 2px;
+    border: 1px solid blue;
+    background-color: whitesmoke;
+}
+
+
+
