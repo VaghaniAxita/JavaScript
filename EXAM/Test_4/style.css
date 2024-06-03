@@ -6,11 +6,6 @@
     /* background-color: rgb(250, 226, 182); */
 }
 
-header {
-    text-align: center;
-    font-size: 30px;
-    color: rgb(153, 45, 6);
-}
 
 #box1 {
     border: 2px solid black;
@@ -41,12 +36,13 @@ header {
 
 #btn1 {
     height: 30px;
-
+    font-weight: bold;
 }
 
 #btn2 {
     height: 30px;
     margin-left: 30px;
+    font-weight: bold;
 }
 
 
@@ -78,12 +74,13 @@ header {
 
 #btn1 {
     height: 30px;
-
+    font-weight: bold;
 }
 
 #btn2 {
     height: 30px;
     margin-left: 30px;
+    font-weight: bold;
 }
 
 
@@ -113,12 +110,13 @@ header {
 
 #btn1 {
     height: 30px;
-
+    font-weight: bold;
 }
 
 #btn2 {
     height: 30px;
     margin-left: 30px;
+    font-weight: bold;
 }
 
 
@@ -143,16 +141,25 @@ header {
 
 
 #text2 {
-    margin-left: 50px;
+    margin-left: 80px;
     font-weight: bold;
 }
 
 #btn1 {
     height: 30px;
-
+    font-weight: bold;
 }
 
 #btn2 {
     height: 30px;
     margin-left: 30px;
+    font-weight: bold;
+}
+
+#prod{
+    margin-left: 600px;
+}
+
+#title{
+    margin-left: 600px;
 }

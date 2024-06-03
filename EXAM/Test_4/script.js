@@ -1,86 +1,49 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const accountDetails = document.getElementById('accountDetails');
-
-    document.getElementById('bankAccountForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const username = document.getElementById('username').value;
-        const accountNumber = document.getElementById('accountNumber').value;
-        const amount = document.getElementById('amount').value;
-
-        const newAccount = new BankAccount(accountNumber, username, amount);
-
-        const accountDiv = document.createElement('div');
-        accountDiv.innerHTML = `
-            <p>Username: ${newAccount.getUserName()}</p>
-            <p>Account Number: ${newAccount.getAccountNo()}</p>
-            <p>Amount: ${newAccount.getAmount()}</p>
-        `;
-
-        accountDetails.appendChild(accountDiv);
-    });
+const accounts = [];
 
 
+const updateAccountDetails = () => {
+    const accountsContainer = document.getElementById('accountsContainer');
+    accountsContainer.innerHTML = '';
 
-class BankAccount {
-    #username;
-    #Num;
-    #amount;
+    const accountsHTML = accounts.map((account, index) => `
+        <div class="account">
+            <p>Account ${index + 1}</p>
+            <p>Username: ${account.username}</p>
+            <p>Account Number: ${account.number}</p>
+            <p>Amount: ${account.amount}</p>
+            <hr>
+        </div>
+    `);
 
-    constructor(Num, username, amount) {
-        this.#Num = Num;
-        this.#username = username;
-        this.#amount = amount || 0;
+    accountsContainer.innerHTML = accountsHTML;
+};
+
+
+document.getElementById('bankAccountForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+
+    const username = document.getElementById('username').value;
+    const number = document.getElementById('number').value;
+    const amount = Number(document.getElementById('amount').value);
+
+    const newAccount = { username, number, amount };
+    accounts.push(newAccount);
+
+    updateAccountDetails();
+});
+
+
+document.getElementById('depositamount').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const amountDeposit = Number(document.getElementById('amountdeposit').value);
+
+    if (accounts.length > 0) {
+        accounts[accounts.length - 1].amount += amountDeposit;
+        updateAccountDetails();
+        alert('Deposit successful!');
+    } else {
+        alert('No account available for deposit!');
     }
-
-    getAccountNo() {
-        return this.#Num;
-    }
-
-    setAccountNo(Num) {
-        this.#Num = Num;
-    }
-
-    getUserName() {
-        return this.#username;
-    }
-
-    setUserName(username) {
-        this.#username = username;
-    }
-
-    getAmount() {
-        return this.#amount;
-    }
-
-    setAmount(amount) {
-        this.#amount = amount;
-    }
-
-    depositAmount(amount) {
-        if (amount < 1) {
-            throw new Error("Amount must be greater than 0");
-        } else {
-            this.#amount += amount;
-        }
-    }
-
-    #canWithdraw(reqAmt) {
-        return this.#amount >= reqAmt;
-    }
-
-    withdrawAmt(amount) {
-        if (amount < 1) {
-            throw new Error("Amount must be greater than 0");
-        } else {
-            if (this.#canWithdraw(amount)) {
-                this.#amount -= amount;
-                console.log("Withdrawal successful");
-            } else {
-                console.log("Not enough balance");
-            }
-        }
-    }
-}
-
 });
