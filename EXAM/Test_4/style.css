@@ -1,0 +1,158 @@
+#box {
+    border: 1px solid black;
+    max-width: 1000th;
+    min-width: none;
+    max-height: 1000px;
+    /* background-color: rgb(250, 226, 182); */
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(153, 45, 6);
+}
+
+#box1 {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgb(181, 240, 244); */
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 75px;
+}
+
+#img1 {
+    border: 1px solid grey;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+
+
+
+#text2 {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#btn1 {
+    height: 30px;
+
+}
+
+#btn2 {
+    height: 30px;
+    margin-left: 30px;
+}
+
+
+#box2 {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgb(147, 237, 244); */
+    display: inline-block;
+    vertical-align: top;
+}
+
+#img2 {
+    border: 1px solid grey;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+
+
+
+#text2 {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#btn1 {
+    height: 30px;
+
+}
+
+#btn2 {
+    height: 30px;
+    margin-left: 30px;
+}
+
+
+#box3 {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgb(147, 237, 244); */
+    display: inline-block;
+    vertical-align: top;
+}
+
+#img3 {
+    border: 1px solid grey;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+
+#text2 {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#btn1 {
+    height: 30px;
+
+}
+
+#btn2 {
+    height: 30px;
+    margin-left: 30px;
+}
+
+
+#box4 {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgb(147, 237, 244); */
+    display: inline-block;
+    vertical-align: top;
+}
+
+#img4 {
+    border: 1px solid grey;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+
+
+#text2 {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#btn1 {
+    height: 30px;
+
+}
+
+#btn2 {
+    height: 30px;
+    margin-left: 30px;
+}
