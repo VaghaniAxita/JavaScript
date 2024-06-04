@@ -56,7 +56,7 @@ class BankAccount {
         }
      }
 }
-let ac3=new BankAccount2("234", "def", "4567")
+let ac3=new BankAccount("234", "def", "4567")
 try {
      ac3.depositAmount(10)   
 } catch (error) {
@@ -64,8 +64,8 @@ try {
 }
 console.log(ac3.getAccountNo());
 
-let ac2 = new BankAccount2("123", "abc", "4567");
-console.log(ac2.getAmount()); // 0
+let ac2 = new BankAccount("123", "abc", "4567");
+console.log(ac2.getAmount()); 
 ac2.setAmount(500);
 console.log(ac2.getAmount()); 
 console.log(ac2.getAccountNo()); 
