@@ -34,16 +34,3 @@ document.getElementById('bankAccountForm').addEventListener('submit', function (
 });
 
 
-document.getElementById('depositamount').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const amountDeposit = Number(document.getElementById('amountdeposit').value);
-
-    if (accounts.length > 0) {
-        accounts[accounts.length - 1].amount += amountDeposit;
-        updateAccountDetails();
-        alert('Deposit successful!');
-    } else {
-        alert('No account available for deposit!');
-    }
-});
