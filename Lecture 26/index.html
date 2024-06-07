@@ -6,9 +6,47 @@
     <title>Liker App</title>
 
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 <body>
-    <h1>LIKER APP</h1>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-home" id="home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-info-circle" id="circle"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-envelope" id="contact"></i>Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <img src="https://avatars.mds.yandex.net/i?id=213d8c22e66761be0dd886aed1081c7612dd9226-5101230-images-thumbs&n=13" alt="" id="img">
+
+        <div class="icons">
+            <div class="icon" id="like-icon">
+                <span id="like-count">0</span>
+                <button id="like-button"><i class="fas fa-thumbs-up"></i></button>
+            </div>
+            <div class="icon" id="share-icon">
+                <span id="share-count">0</span>
+                <button id="share-button"><i class="fas fa-share"></i></button>
+            </div>
+            <div class="icon" id="comment-icon">
+                <span id="comment-count">0</span>
+                <button id="comment-button"><i class="fas fa-comment"></i></button>
+            </div>
+            <div class="icon" id="subscribe-icon">
+                <span id="subscribe-count">0</span>
+                <button id="subscribe-button"><i class="fas fa-bell"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
 </body>
+
 <script src="./script.js"></script>
 </html>
