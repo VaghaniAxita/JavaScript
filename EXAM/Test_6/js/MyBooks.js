@@ -1,4 +1,4 @@
-import navbar from "../components/navbar.js";
+import navbar from "../Components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 
 let buyList = JSON.parse(localStorage.getItem('buy-list')) || [];

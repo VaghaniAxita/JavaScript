@@ -1,4 +1,4 @@
-import navbar from "../components/navbar.js";
+import navbar from "../Components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 let books = JSON.parse(localStorage.getItem('bookmark-list')) || [];
 const displayBooks = (books) => {
