@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <!-- append nav from js -->
+    </div>
+    <div id="dashboard">
+        <h1>Library Dashboard</h1>
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="biography">Biography</option>
+            <option value="science">Science</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="mystery">Mystery</option>
+            <option value="romance">Romance</option>
+            <option value="horror">Horror</option>
+        </select>
+        <p>Total Books: <span id="totalBooks"></span></p>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Publication Date</th>
+                    <th>Category</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Buy</th>
+                    <th>Bookmark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be appended here by JS -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/Dashboard.js" type="module"></script>
+</body>
+</html>

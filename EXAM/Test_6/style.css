@@ -1,0 +1,189 @@
+body {
+    font-family: 'Lato', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+nav {
+    background-color: #3b3b3a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #e5d5f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Form */
+#Home {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+#Price,
+form select {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Dashboard */
+#Dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Filter {
+    margin-bottom: 20px;
+}
+
+#booksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#booksTable th,
+#booksTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#booksTable th {
+    background-color: #f2f2f2;
+}
+
+#booksTable td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#booksTable td button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#booksTable td button:hover {
+    background-color: #0056b3;
+}
+
+/* My Books and Bookmarked Books */
+#myBooks,
+#bookmarkedBooks {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#myBooks h1,
+#bookmarkedBooks h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#myBooksTable,
+#bookmarkTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#myBooksTable th,
+#myBooksTable td,
+#bookmarkTable th,
+#bookmarkTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#myBooksTable th,
+#bookmarkTable th {
+    background-color: #f2f2f2;
+}
+
+#myBooksTable td img,
+#bookmarkTable td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#myBooksTable td button,
+#bookmarkTable td button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#myBooksTable td button:hover,
+#bookmarkTable td button:hover {
+    background-color: #0056b3;
+}
+
+#myBooksTable td:nth-child(6),
+#bookmarkTable td:nth-child(6) {
+    text-align: center;
+    font-weight: bold;
+    color: #007bff; 
+}
