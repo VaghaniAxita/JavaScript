@@ -26,7 +26,7 @@ nav a:hover {
 
 /* Form */
 #Home {
-    width: 50%;
+    width: 40%;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -48,35 +48,37 @@ form input[type="text"],
 form input[type="date"],
 #Price,
 form select {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 form input[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 14px;
     color: #fff;
-    background-color: #333;
+    background-color: #007bff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
+
+
 
 /* Dashboard */
 #Dashboard {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 #Filter {
@@ -87,17 +89,29 @@ form input[type="submit"]:hover {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    font-size: 16px;
 }
 
 #booksTable th,
 #booksTable td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px 15px;
     text-align: left;
+    transition: background-color 0.3s;
 }
 
 #booksTable th {
     background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#booksTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#booksTable tr:hover {
+    background-color: #f1f1f1;
 }
 
 #booksTable td img {
@@ -108,16 +122,18 @@ form input[type="submit"]:hover {
 }
 
 #booksTable td button {
-    padding: 5px 10px;
+    padding: 8px 12px;
     cursor: pointer;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #booksTable td button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 /* My Books and Bookmarked Books */
