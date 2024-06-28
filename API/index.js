@@ -21,7 +21,7 @@ const Display = (prod) => {
         description.textContent = product.description;
 
         let price = document.createElement("p");
-        price.textContent = `Price: $${product.price}`;
+        price.textContent = `Price: ${product.price}`;
 
         div.append(img,title,description,price);
         document.getElementById("data").append(div);
