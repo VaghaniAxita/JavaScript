@@ -6,9 +6,6 @@ const dateDayElement = document.getElementById('date-day');
 const locationElement = document.getElementById('location');
 const weatherTempElement = document.getElementById('weather-temp');
 const weatherDescElement = document.getElementById('weather-desc');
-const precipitationValueElement = document.getElementById('precipitation-value');
-const humidityValueElement = document.getElementById('humidity-value');
-const windValueElement = document.getElementById('wind-value');
 
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
