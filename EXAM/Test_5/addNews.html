@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <input type="text" name="title" id="title" placeholder="Enter Title" required>
+        <input type="url" name="img" id="img" placeholder="Add Image URL" required> 
+        <select name="country" id="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="America">America</option>
+        </select>
+        <input type="text" name="description" id="description" placeholder="Enter Description" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="./addNewsForm.js"></script>
+</body>
+</html>
