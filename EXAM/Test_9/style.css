@@ -1,0 +1,149 @@
+body {
+    background-color: #0e0e1c;
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease-in-out;
+    color: #f9f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    transition: background 0.5s ease-in-out;
+    padding: 20px;
+    text-align: center;
+    color: #f9f2f2;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.jumbotron.bg-ar-rahman {
+    background: url('../imges/7454.gif_wh860.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.jumbotron.bg-kk {
+    background: url('../imges/Google-MusicLM.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.jumbotron.bg-arijit-singh {
+    background: url('../imges/icegif-198.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.audio-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlist-container {
+    background-color: #131212;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#searchValue {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2c2c2e;
+    color: #f9f2f2;
+}
+
+.search-button {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: yellowgreen;
+    color: #090909;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #8dc26f;
+    color: #fff;
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1f;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    color: #f9f2f2;
+}
+
+.playlist-item:hover {
+    background-color: #2c2c2e;
+}
+
+.playlist-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.playlist-item span {
+    color: #f9f2f2;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #searchValue {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .playlist-item img {
+        width: 40px;
+        height: 40px;
+    }
+}

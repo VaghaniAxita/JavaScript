@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentData Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="studentData">
+        <input type="text" id="grid" placeholder="Grid">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="course" placeholder="Course">
+        <button type="submit">Submit</button>
+        <button id="deleteAll">Delete All</button>
+    </form>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Grid</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</body>
+<script src="./script.js"></script>
+
+</html>

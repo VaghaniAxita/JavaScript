@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Audio Player</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Favorites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container mt-5">
+        <div class="jumbotron text-center" id="bg">
+            <h1 class="display-4 text-light">Audio Player</h1>
+        </div>
+
+        <!-- Audio Player Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="audio-image">
+                    <img id="audioImg" src="./imges/5uwq.gif" alt="Audio Image" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <audio id="audio" controls class="mb-3 w-100"></audio>
+                <div>
+                    <button id="prev" class="btn btn-primary mx-1">Prev</button>
+                    <button id="play" class="btn btn-success mx-1">Play</button>
+                    <button id="pause" class="btn btn-warning mx-1">Pause</button>
+                    <button id="next" class="btn btn-primary mx-1">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Form -->
+        <form id="search-form" class="mb-4 search-box">
+            <input id="searchValue" type="text" placeholder="Search tracks..." class="form-control me-2">
+            <button class="btn btn-outline-success search-button" type="submit">Search</button>
+        </form>
+
+        <!-- Artist Filter -->
+        <div class="mb-4">
+            <label for="artistFilter">Filter by Artist:</label>
+            <select id="artistFilter" class="form-control">
+                <option value="">All Artists</option>
+                <option value="A.R. Rahman">A.R. Rahman</option>
+                <option value="KK">KK</option>
+                <option value="Arijit Singh">Arijit Singh</option>
+                <option value="Mohit Chauhan">Mohit Chauhan</option>
+                <option value="Atif Aslam">Atif Aslam</option>
+                <option value="Nikhil Dsouzas">Nikhil Dsouzas</option>
+            </select>
+        </div>
+
+        <!-- Playlist Section -->
+        <div id="playlistContainer" class="playlist-container mt-4">
+            <div id="playlist" class="list-group"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
